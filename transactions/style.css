@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.person{
+    height: 100px;
+    width: 100%;
+    background-color: #111;
+    border-radius: 20px;
+
+}
+
+.addnew{
+    margin-left: 20px;
+    width: 200px;
+    background: #514242;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+.addnew h2{
+    margin-top: 30px;
+    color: #fffafa;
+}
