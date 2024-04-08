@@ -1,113 +1,203 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body{
-    height: 100%;
     width: 100%;
-    background: #f59210de;
-    /* display: flex; */
+    height: 100%;
+    background: scroll;
+    background-color: rgb(208, 173, 208);
 }
-
 .container{
     padding: 10px 20px;
-}
-
-a{
-    text-decoration: none;
 }
 
 ul{
     list-style: none;
 }
 
-.header{
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    background-size: 100%;
+}
+
+header{
     position: sticky;
     top: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.main-nav{
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    & a{
-        color: #fff;
-        font-size: 20px;
-        font-weight: 500;
-    }
-}
-
-.list-menu{
-    display: flex;
-    gap: 50px;
-}
-
-.main-nav{
-    background: rgba(0,0,0,.3);
-    box-shadow: 10px 0 5px #000;
+    height: 70px;
+    background: transparent;
+    /* opacity: 0.5; */
+    z-index: 100;
     backdrop-filter: blur(12px);
+    box-shadow: 5px 0 20px #000;
+    
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
 }
 
 .banner{
-    height: 60vh;
-    width: 90vw;
-    /* position: relative; */
-    border: 1px solid;
-    margin: auto;
-    background-image: url(WhatsApp\ Image\ 2024-04-08\ at\ 16.23.40_f5bb6df9.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 500px;
+    border: 1px solid #a4a4a45c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(17, 17, 17,0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    box-shadow: inset 5px 0 20px #fff,
+                /* inset 15px 0 50px rgb(0, 0, 0,0.5), */
+                50px 0 80px rgba(255,255,255,0.5);
+}
+
+.ban-title{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0 10px;
+    gap: 20px;
+}
+
+.join{
+    margin-top: 30px;
+    width: 30%;
+    padding: 12px 0;
+    border: none;
     border-radius: 20px;
+    font-size: 15px;
+    color: #fffdfd;
+    font-weight: bold;
+    background: #a452b3;
+    backdrop-filter: blur(32px);
+    box-shadow: inset 2px 0 5px #fff, 
+                /* inset 15px 0 50px rgba(255, 248, 248, 0.5), */
+                /* 50px 0 -20px #0cccf7, */
+                50px 0 80px rgba(79, 206, 229, 0.5);
 }
 
-.option-list{
-    width: 100%;
-    /* border: 1px solid ; */
-    height: 200px;
+.ban-title h1{
+    color: rgba(211, 248, 233, 0.953);
+    & span{
+        color: #ff391f;
+        font-size: 32px;
+    }
+}
+
+.block{
+    margin-top: 30px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 30px;
-}
-
-.options{
-    
-    height: 150px;
-    width: 150px;
-    /* border: 1px solid ; */
-    padding: 10px 20px;
-    color: #fff;
-    text-align: center;
-    cursor: pointer;
-}
-
-
-
-.about{
-    text-align: center;
-    color: white;
-}
-
-.responses{
-    
-    margin: 50px 20px 0;
-    display: flex;
-    gap: 50px;
-    /* margin: auto; */
     align-items: center;
     justify-content: center;
-    /* margin: auto; */
 }
 
-.people1{
-    height: 150px;
-    width: 250px;
-    border: 1px solid white;
+.statement{
+    height: 200px;
+    width: 210px;
+    /* border: 1px solid; */
+    background: #111;
+    border-radius: 10px;
+    box-shadow: inset 2px 0 5px #fff;
+
 }
 
+.about__section{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    & h1{
+        font-family:  sans-serif;
+        color: white;
+        font-size: 40px;
+    }
+}
+
+.financial-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.financial-section h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 60%;
+    border-top-right-radius: 50px;
+    padding: 10px 20px;
+    background-color: #a452b3;
+    box-shadow: inset 2px 0 5px #fff;
+    color: #fff;
+}
+.management-image img,
+.financial-image img{
+    transition: 1s ease;
+    transition-delay: 1s;
+    filter: drop-shadow(5px 0 10px rgba(0,0,0,.8));
+}
+
+.management-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.management-section h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    border-top-left-radius: 50px;
+    padding: 10px 20px;
+    background-color: #a452b3;
+    box-shadow: inset -2px 0 5px #fff;
+    color: #fff;
+    /* transform: translateY(-10px) */
+}
+
+.review__section{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.review{
+    height: 300px;
+    width: 220px;
+    border: 1px solid;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: inset 5px 0 10px #fff,
+            0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: .4s ease-out;
+}
+
+.review img{
+    position: absolute;
+    top: -60px;
+    left: -15px;
+}
+
+.review-text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 120px;
+    margin: 0 10px;
+}
+
+.review:hover{
+    transform: scale(1.02);
+}
