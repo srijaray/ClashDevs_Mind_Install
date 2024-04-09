@@ -399,3 +399,37 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     transform: scale(1.02);
 }
 
+@media screen and (min-width: 786px) {
+    .ban-img img{
+        width: 400px;
+    }
+
+    .ban-title{
+        font-size: 30px;
+    }
+    header{
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+
+    }
+    .banner{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .ban-img img{
+        width: 400px;
+    }
+
+    .ban-title{
+        font-size: 30px;
+    }
+    .banner{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
