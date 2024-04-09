@@ -11,6 +11,11 @@
 
 </head>
 <body>
+    <div class="backvid">
+        <video autoplay muted loop plays-inline >
+            <source src="images/back.mp4" type="video/mp4">
+        </video>
+    </div>
     <header class="header">
 
         <div class="top-nav">
@@ -77,8 +82,8 @@
                         <div class="invest">
                             <h3>Invest &nbsp;&nbsp; :</h3>
                             <div class="invest-add">
-                                <form action="invest">
-                                    <input type="number">
+                                <form id="investForm">
+                                    <input type="number" id="investAmount">
                                     <input type="submit" value="INVEST" class="invest-btn">
                                 </form>
                             </div>
@@ -90,8 +95,8 @@
                         <div class="sell">
                             <h3>Sell &nbsp;&nbsp; :</h3>
                             <div class="sell-add">
-                                <form action="invest">
-                                    <input type="number">
+                                <form id="sellForm">
+                                    <input type="number" id="sellAmount">
                                     <input type="submit" value="SELL" class="sell-btn">
                                 </form>
                             </div>
@@ -108,8 +113,8 @@
 
                         <div class="remaining">
                             <h3>Remaining Balance &nbsp;&nbsp; :</h3>
-                            <div class="r-bal">
-                                <h5 id="r-bal">3000  &#8377;</h5>
+                            <div class="r-bal" id="remainingBalance">
+                                3000  &#8377;
                             </div>
                             <button class="optn-history">
                                 Check History

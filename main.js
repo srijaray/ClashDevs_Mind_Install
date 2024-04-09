@@ -29,5 +29,3 @@ if (optnRevList.length > 0 && optnDetList.length > 0) {
     });
 }
 
-
-

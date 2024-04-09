@@ -8,7 +8,6 @@ body{
     width: 100%;
     height: 100%;
     background: scroll;
-    background-color: rgb(208, 173, 208);
 }
 .container{
     padding: 10px 20px;
@@ -26,7 +25,15 @@ img{
     display: block;
     background-size: 100%;
 }
-
+.backvid{
+    position: fixed;
+    z-index: -1;
+}
+video{
+    background-position: center;
+    background-size: cover;
+    /* width: 100%; */
+}
 header{
     position: sticky;
     top: 0;
@@ -110,6 +117,7 @@ main{
     background: #5a5a5a;
     border-radius: 10px;
     box-shadow: inset 2px 0 5px #fff;
+    /* z-index: 100; */
 
 }
 
@@ -293,12 +301,15 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
         color: white;
         font-size: 40px;
     }
+
+    /* z-index: 100; */
 }
 
 .financial-section{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* z-index: 100; */
 }
 
 .financial-section h2{
@@ -315,12 +326,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     transition: 1s ease;
     transition-delay: 1s;
     filter: drop-shadow(5px 0 10px rgba(0,0,0,.8));
+
 }
 
 .management-section{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* z-index: 100; */
 }
 
 .management-section h2{
@@ -343,12 +356,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     align-items: center;
     justify-content: center;
     gap: 50px;
+    text-align: center;
 }
 .review__section h1{
     position: absolute;
     font-size: 50Px;
 }
 .review{
+    text-align: left;
     height: 300px;
     width: 220px;
     border: 1px solid;
